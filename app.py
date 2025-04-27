@@ -470,7 +470,7 @@ def main():
                 st.download_button(label="Download cleaned text",data=text_bytes,file_name=f"cleaned_data.{out_ext}",mime="text/plain")
 
     elif choice == "🚿FullCleanMode":
-        st.title("🚿 Full Auto Clean Mode")
+        st.title("🚿 Full Clean Mode")
 
         def load(uploaded_file):
             df, txt_data = None, ""
@@ -573,7 +573,7 @@ def main():
         st.markdown("""- **CSV (.csv)**
 - **JSON (.json)**
 - **Text Files (.txt)**
-- **PDF (.pdf)** – Extracts tabular data from PDFs
+- **PDF (.pdf)** – Extracts data from PDFs
 - **ZIP (.zip)** – Automatically extracts and processes supported files inside""")
         st.header("⚙️ Cleaning Modes")
         st.subheader("🧠 Smart Clean Mode")
