@@ -15,8 +15,8 @@ def main():
 
     choice=st.sidebar.selectbox("Clean Section",menu)
     if choice=="📁FileUploader":
-        st.title("Data Cleaner-File upload section")
-        uploaded_file=st.file_uploader("Choose file",type=['csv','txt','pdf','json','zip','file'])
+        st.title("DCleanerX-File upload section")
+        uploaded_file=st.file_uploader("Choose file",type=['csv','txt','pdf','json','zip'])
         if uploaded_file is not None:
             st.session_state["uploaded_file"]=uploaded_file
             file_details={"filename":uploaded_file.name,"filesize":uploaded_file.size,"filetype":uploaded_file.type}
